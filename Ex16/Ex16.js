@@ -13,13 +13,22 @@ while(guess !== rand)
 {
     if(guess > rand)
     {
-        guess = parseInt(prompt("Too high! Guess again"));
+        guess = prompt("Too high! Guess again");
     }
     else if(guess < rand)
     {
-        guess = parseInt(prompt("Too low! Guess again"));
+        guess = prompt("Too low! Guess again");
     }
-    i++;
+
+    if(guess.toString().toLowerCase() == 'q')
+    {
+        break;
+    }
+    else
+    {
+        i++;
+        guess = parseInt(guess);
+    }
 }
 
 console.log(`It tooks you ${i} try to guess the number ${rand}`);
