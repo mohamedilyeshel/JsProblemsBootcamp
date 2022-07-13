@@ -20,8 +20,9 @@ while(true)
     }
     else if(whatToDo === "delete")
     {
-        let remToDo = prompt("Remove a todo from your list by typing the index");
-        if(todoList.splice(remToDo, 1).length > 0)
+        let remToDo = parseInt(prompt("Remove a todo from your list by typing the index"));
+
+        if(!isNaN(remToDo) && todoList.splice(remToDo, 1).length > 0)
             console.log("Todo removed");
         else
             console.log("Todo doesn't exist");
