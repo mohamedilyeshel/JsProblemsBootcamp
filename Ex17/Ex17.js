@@ -25,7 +25,7 @@ while(true)
         if(!isNaN(remToDo) && todoList.splice(remToDo, 1).length > 0)
             console.log("Todo removed");
         else
-            console.log("Todo doesn't exist");
+            console.log("Todo doesn't exist or index incorrect");
     }
     else if(whatToDo === "quit")
     {
