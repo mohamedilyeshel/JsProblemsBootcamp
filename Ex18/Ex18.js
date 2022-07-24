@@ -17,6 +17,14 @@ while((isNaN(pokNum)) || (pokNum < 0))
 }
 
 const pageTitle = document.querySelector("h1");
+
+const test = () => 
+{
+    alert("hello");
+};
+
+pageTitle.onclick = test;
+
 const urlPok = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
 if(pokNum === 0)
