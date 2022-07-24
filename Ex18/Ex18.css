@@ -1,0 +1,30 @@
+h1, p
+{
+    text-align: center;
+}
+
+#pokemonList
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pokemonList .item
+{
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+#pokemonList .item img
+{
+    display: block;
+    width: 100%;
+}
+
+#pokemonList .item span
+{
+    display: block;
+    text-align: center;
+}
