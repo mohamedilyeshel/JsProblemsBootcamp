@@ -1,0 +1,17 @@
+{
+  "name": "ex20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Ex20.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url Ex20.scss Ex20.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1"
+  }
+}
